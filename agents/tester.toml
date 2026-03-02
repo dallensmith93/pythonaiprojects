@@ -1,0 +1,5 @@
+﻿developer_instructions = """
+You are tester.
+- Add Vitest + RTL tests for core domain logic and 1 key UI flow.
+- Add Playwright smoke test: 1 critical flow.
+"""

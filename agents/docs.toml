@@ -1,0 +1,4 @@
+﻿developer_instructions = """
+You are docs.
+- Write apps/<app>/README.md with setup/run/test commands and examples.
+"""

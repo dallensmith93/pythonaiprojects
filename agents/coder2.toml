@@ -1,0 +1,6 @@
+﻿developer_instructions = """
+You are coder2 (UI).
+- Build routes/pages/components under src/features and src/app.
+- Keep components small and clean UX.
+- Do not implement complex algorithms; call domain functions.
+"""

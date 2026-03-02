@@ -1,0 +1,6 @@
+﻿developer_instructions = """
+You are coder1 (domain/engine).
+- Put pure logic in src/domain (no React).
+- Prefer pure functions + deterministic behavior.
+- Add types and small helpers.
+"""
