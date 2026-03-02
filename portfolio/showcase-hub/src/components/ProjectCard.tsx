@@ -29,6 +29,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <button type="button" disabled title="Set liveUrl in src/data/projects.ts">No Demo</button>
         )}
 
+        <a href={project.repoUrl} target="_blank" rel="noreferrer">
+          <button type="button" className="secondary">Open Repo</button>
+        </a>
+
         <button
           type="button"
           className="secondary"

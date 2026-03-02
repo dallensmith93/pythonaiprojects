@@ -13,7 +13,7 @@ const PROJECT: ShowcaseProject = {
   tags: ['developer-tool'],
   liveUrl: '',
   repoPath: 'apps/sample',
-  repoUrl: '/apps/sample'
+  repoUrl: 'https://github.com/dallensmith93/pythonaiprojects/tree/main/apps/sample'
 }
 
 describe('ProjectCard', () => {
@@ -22,5 +22,7 @@ describe('ProjectCard', () => {
     expect(screen.getByText('Sample Project')).toBeInTheDocument()
     expect(screen.getByText('Test project card rendering.')).toBeInTheDocument()
     expect(screen.getByText('apps/sample')).toBeInTheDocument()
+    const repoLink = screen.getByRole('link', { name: /open repo/i })
+    expect(repoLink).toHaveAttribute('href', PROJECT.repoUrl)
   })
 })

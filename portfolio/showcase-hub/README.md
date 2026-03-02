@@ -44,8 +44,12 @@ Each project includes:
 
 ## Live Demo + Repo Path
 - `liveUrl`: used by the `Live Demo` button.
+- If `liveUrl` is empty, the card still remains usable via `Open Repo`.
 - `repoPath`: used by the `Repo Path` button (copies path to clipboard).
-- `repoUrl`: reserved for external source links if needed later.
+- `repoUrl`: used by `Open Repo` and should be a full URL.
+
+By default, `src/data/projects.ts` builds `repoUrl` automatically from:
+- `https://github.com/dallensmith93/pythonaiprojects/tree/main/<repoPath>`
 
 ## UI Preferences Persistence
 Saved in `localStorage`:
