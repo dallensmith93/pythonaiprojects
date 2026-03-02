@@ -1,0 +1,23 @@
+﻿{
+    "id":  "01",
+    "slug":  "incident-commander-sim",
+    "name":  "Incident Commander Simulator",
+    "one_liner":  "Realistic incident response simulation with alerts/logs/timeline and agent-driven triage.",
+    "core_modules":  [
+                         "sim_engine",
+                         "alerts",
+                         "logs_viewer",
+                         "timeline",
+                         "postmortem_export",
+                         "scoring"
+                     ],
+    "stack_defaults":  {
+                           "backend":  "FastAPI",
+                           "ui":  "Next.js (React)",
+                           "agents_runtime":  "Python (async), tool-router pattern",
+                           "storage":  "SQLite + SQLAlchemy (local dev)",
+                           "auth":  "optional (disabled by default)",
+                           "logging":  "structlog + json logs",
+                           "tracing_ui":  "agent events panel"
+                       }
+}

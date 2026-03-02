@@ -1,0 +1,22 @@
+﻿{
+    "id":  "02",
+    "slug":  "mastery-gradebook",
+    "name":  "Mastery-Based Gradebook + Skill Graph",
+    "one_liner":  "Standards mastery tracking with prerequisite graph + personalized practice recommendations.",
+    "core_modules":  [
+                         "standards",
+                         "mastery_rules",
+                         "prereq_graph",
+                         "recommendations",
+                         "reporting"
+                     ],
+    "stack_defaults":  {
+                           "backend":  "FastAPI",
+                           "ui":  "Next.js (React)",
+                           "agents_runtime":  "Python (async), tool-router pattern",
+                           "storage":  "SQLite + SQLAlchemy (local dev)",
+                           "auth":  "optional (disabled by default)",
+                           "logging":  "structlog + json logs",
+                           "tracing_ui":  "agent events panel"
+                       }
+}

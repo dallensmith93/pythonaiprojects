@@ -1,0 +1,21 @@
+﻿{
+    "id":  "19",
+    "slug":  "compliance-linter",
+    "name":  "Policy \u0026 Constraints Compliance Checker",
+    "one_liner":  "Lint drafts against tone/length/rules, highlight issues, propose fixes.",
+    "core_modules":  [
+                         "rules_engine",
+                         "scoring",
+                         "annotations",
+                         "rewrite_suggestions"
+                     ],
+    "stack_defaults":  {
+                           "backend":  "FastAPI",
+                           "ui":  "Next.js (React)",
+                           "agents_runtime":  "Python (async), tool-router pattern",
+                           "storage":  "SQLite + SQLAlchemy (local dev)",
+                           "auth":  "optional (disabled by default)",
+                           "logging":  "structlog + json logs",
+                           "tracing_ui":  "agent events panel"
+                       }
+}

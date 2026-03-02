@@ -1,0 +1,22 @@
+﻿{
+    "id":  "14",
+    "slug":  "scaled-copies-generator",
+    "name":  "Scaled Copies Activity Generator",
+    "one_liner":  "Generate problems, keys, and interactive demos aligned to mastery goals.",
+    "core_modules":  [
+                         "problem_gen",
+                         "difficulty_scaling",
+                         "answer_keys",
+                         "print_export",
+                         "demos"
+                     ],
+    "stack_defaults":  {
+                           "backend":  "FastAPI",
+                           "ui":  "Next.js (React)",
+                           "agents_runtime":  "Python (async), tool-router pattern",
+                           "storage":  "SQLite + SQLAlchemy (local dev)",
+                           "auth":  "optional (disabled by default)",
+                           "logging":  "structlog + json logs",
+                           "tracing_ui":  "agent events panel"
+                       }
+}

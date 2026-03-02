@@ -1,0 +1,22 @@
+﻿{
+    "id":  "13",
+    "slug":  "walkthrough-episode-planner",
+    "name":  "Walkthrough / Achievement Episode Planner",
+    "one_liner":  "Convert checklists into episode plans, titles, pacing, and collectibles tracking.",
+    "core_modules":  [
+                         "checklist_import",
+                         "chunking",
+                         "pacing_rules",
+                         "episode_titles",
+                         "exports"
+                     ],
+    "stack_defaults":  {
+                           "backend":  "FastAPI",
+                           "ui":  "Next.js (React)",
+                           "agents_runtime":  "Python (async), tool-router pattern",
+                           "storage":  "SQLite + SQLAlchemy (local dev)",
+                           "auth":  "optional (disabled by default)",
+                           "logging":  "structlog + json logs",
+                           "tracing_ui":  "agent events panel"
+                       }
+}

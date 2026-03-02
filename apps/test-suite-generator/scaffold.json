@@ -1,0 +1,22 @@
+﻿{
+    "id":  "08",
+    "slug":  "test-suite-generator",
+    "name":  "Test Suite Generator + Flake Detector",
+    "one_liner":  "Generate tests from flows, track flakiness, and recommend quarantines/fixes.",
+    "core_modules":  [
+                         "flow_recorder",
+                         "test_gen",
+                         "run_history",
+                         "flake_scoring",
+                         "quarantine"
+                     ],
+    "stack_defaults":  {
+                           "backend":  "FastAPI",
+                           "ui":  "Next.js (React)",
+                           "agents_runtime":  "Python (async), tool-router pattern",
+                           "storage":  "SQLite + SQLAlchemy (local dev)",
+                           "auth":  "optional (disabled by default)",
+                           "logging":  "structlog + json logs",
+                           "tracing_ui":  "agent events panel"
+                       }
+}

@@ -1,0 +1,14 @@
+﻿[project]
+name = "podcast-episode-factory-backend"
+version = "0.1.0"
+description = "Generate outlines, segments, hooks, and clip ideas with consistency checks."
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.116.0",
+  "uvicorn[standard]>=0.35.0",
+  "sqlalchemy>=2.0.38",
+  "structlog>=25.1.0"
+]
+
+[tool.uv]
+package = false

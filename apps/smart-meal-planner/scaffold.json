@@ -1,0 +1,22 @@
+﻿{
+    "id":  "04",
+    "slug":  "smart-meal-planner",
+    "name":  "Smart Meal Planner (Low-carb, Simple)",
+    "one_liner":  "Constraint-based meal plans + shopping lists with substitutions and cooking simplicity.",
+    "core_modules":  [
+                         "constraints",
+                         "meal_db",
+                         "substitutions",
+                         "macros",
+                         "shopping_list"
+                     ],
+    "stack_defaults":  {
+                           "backend":  "FastAPI",
+                           "ui":  "Next.js (React)",
+                           "agents_runtime":  "Python (async), tool-router pattern",
+                           "storage":  "SQLite + SQLAlchemy (local dev)",
+                           "auth":  "optional (disabled by default)",
+                           "logging":  "structlog + json logs",
+                           "tracing_ui":  "agent events panel"
+                       }
+}

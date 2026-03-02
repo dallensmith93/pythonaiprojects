@@ -1,0 +1,22 @@
+﻿{
+    "id":  "20",
+    "slug":  "spec-to-prototype",
+    "name":  "Product Spec → Prototype Builder",
+    "one_liner":  "Generate PRD + API schema + wireframe notes + starter UI skeleton.",
+    "core_modules":  [
+                         "prd",
+                         "schemas",
+                         "consistency",
+                         "starter_repo_gen",
+                         "ui_skeleton"
+                     ],
+    "stack_defaults":  {
+                           "backend":  "FastAPI",
+                           "ui":  "Next.js (React)",
+                           "agents_runtime":  "Python (async), tool-router pattern",
+                           "storage":  "SQLite + SQLAlchemy (local dev)",
+                           "auth":  "optional (disabled by default)",
+                           "logging":  "structlog + json logs",
+                           "tracing_ui":  "agent events panel"
+                       }
+}

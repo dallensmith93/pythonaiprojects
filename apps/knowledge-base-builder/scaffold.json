@@ -1,0 +1,22 @@
+﻿{
+    "id":  "17",
+    "slug":  "knowledge-base-builder",
+    "name":  "Knowledge Base Builder",
+    "one_liner":  "Ingest docs, produce SOPs/FAQs, detect contradictions, show citations.",
+    "core_modules":  [
+                         "ingestion",
+                         "chunking",
+                         "dedupe",
+                         "contradiction_check",
+                         "kb_ui"
+                     ],
+    "stack_defaults":  {
+                           "backend":  "FastAPI",
+                           "ui":  "Next.js (React)",
+                           "agents_runtime":  "Python (async), tool-router pattern",
+                           "storage":  "SQLite + SQLAlchemy (local dev)",
+                           "auth":  "optional (disabled by default)",
+                           "logging":  "structlog + json logs",
+                           "tracing_ui":  "agent events panel"
+                       }
+}

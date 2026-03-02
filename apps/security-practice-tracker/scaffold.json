@@ -1,0 +1,22 @@
+﻿{
+    "id":  "15",
+    "slug":  "security-practice-tracker",
+    "name":  "Security Practice Lab Tracker",
+    "one_liner":  "Track targets, writeups, payload notes, and daily drills with scoring.",
+    "core_modules":  [
+                         "targets",
+                         "notes",
+                         "spaced_repetition",
+                         "tasks",
+                         "scoring"
+                     ],
+    "stack_defaults":  {
+                           "backend":  "FastAPI",
+                           "ui":  "Next.js (React)",
+                           "agents_runtime":  "Python (async), tool-router pattern",
+                           "storage":  "SQLite + SQLAlchemy (local dev)",
+                           "auth":  "optional (disabled by default)",
+                           "logging":  "structlog + json logs",
+                           "tracing_ui":  "agent events panel"
+                       }
+}

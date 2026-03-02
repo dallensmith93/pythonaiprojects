@@ -1,0 +1,14 @@
+﻿[project]
+name = "walkthrough-episode-planner-backend"
+version = "0.1.0"
+description = "Convert checklists into episode plans, titles, pacing, and collectibles tracking."
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.116.0",
+  "uvicorn[standard]>=0.35.0",
+  "sqlalchemy>=2.0.38",
+  "structlog>=25.1.0"
+]
+
+[tool.uv]
+package = false

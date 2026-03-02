@@ -1,0 +1,22 @@
+﻿{
+    "id":  "03",
+    "slug":  "budget-subscription-detective",
+    "name":  "Budget + Subscription Detective",
+    "one_liner":  "Import bank CSVs, auto-categorize, detect duplicates, forecast cash flow.",
+    "core_modules":  [
+                         "csv_import",
+                         "categorization_rules",
+                         "anomaly_detection",
+                         "forecasting",
+                         "explainability"
+                     ],
+    "stack_defaults":  {
+                           "backend":  "FastAPI",
+                           "ui":  "Next.js (React)",
+                           "agents_runtime":  "Python (async), tool-router pattern",
+                           "storage":  "SQLite + SQLAlchemy (local dev)",
+                           "auth":  "optional (disabled by default)",
+                           "logging":  "structlog + json logs",
+                           "tracing_ui":  "agent events panel"
+                       }
+}

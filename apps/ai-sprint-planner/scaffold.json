@@ -1,0 +1,22 @@
+﻿{
+    "id":  "05",
+    "slug":  "ai-sprint-planner",
+    "name":  "AI Sprint Planner",
+    "one_liner":  "Turn feature ideas into tickets, dependencies, estimates, and a sprint plan.",
+    "core_modules":  [
+                         "ticketing",
+                         "dependency_graph",
+                         "estimation",
+                         "capacity_planning",
+                         "export"
+                     ],
+    "stack_defaults":  {
+                           "backend":  "FastAPI",
+                           "ui":  "Next.js (React)",
+                           "agents_runtime":  "Python (async), tool-router pattern",
+                           "storage":  "SQLite + SQLAlchemy (local dev)",
+                           "auth":  "optional (disabled by default)",
+                           "logging":  "structlog + json logs",
+                           "tracing_ui":  "agent events panel"
+                       }
+}
