@@ -1,4 +1,5 @@
-﻿import { CORE_MODULES } from './coreModules'
+import React from 'react'
+import { CORE_MODULES } from './coreModules'
 
 export function OverviewPanel() {
   return (
